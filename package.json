@@ -1,0 +1,37 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "description": "ToDo app REST API",
+  "author": "Bruna Rodrigues <brunakjrodigues@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "engines": {
+    "node": ">=21"
+  },
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "npx tsc",
+    "clean": "rimraf dist",
+    "start": "node dist/src/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.5",
+    "nodemon": "^3.1.0",
+    "prisma": "^5.13.0",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "@decorators/express": "^3.0.0",
+    "@prisma/client": "^5.13.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-oauth2-jwt-bearer": "^1.6.0"
+  }
+}
