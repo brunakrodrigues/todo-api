@@ -73,33 +73,6 @@ Siga os passos abaixo para configurar o projeto localmente.
 - **Iniciar Servidor de Desenvolvimento:** `npm run dev`
 - **Rodar Testes:** `npm test`
 
-### Estrutura do Projeto
-/
-├── node_modules/            # Módulos instalados do Node.js
-├── prisma/                  # Configurações e migrações do Prisma
-│   └── schema.prisma        # Definição do esquema do banco de dados
-├── src/                     # Código-fonte do projeto
-│   ├── config/              # Configurações de autenticação
-│   │   └── auth.ts
-│   ├── controllers/         # Controladores da aplicação
-│   │   └── todo/
-│   │       └── index.ts
-│   ├── middleware/          # Middlewares da aplicação
-│   │   └── userMiddleware.ts
-│   ├── types/               # Definições de tipos TypeScript
-│   │   ├── app.ts
-│   │   └── index.ts
-│   └── declarations.d.ts    # Declarações de tipos adicionais
-├── .env                     # Variáveis de ambiente
-├── .gitignore               # Arquivos e pastas a serem ignorados pelo Git
-├── docker-compose.yml       # Configuração do Docker Compose
-├── nodemon.json             # Configurações do Nodemon
-├── package-lock.json        # Arquivo de bloqueio de dependências
-├── package.json             # Dependências e scripts npm
-├── README.md                # Este arquivo
-└── tsconfig.json            # Configurações do TypeScript
-
-
 ### Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests. Siga os passos abaixo para contribuir:
